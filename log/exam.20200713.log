@@ -1,0 +1,468 @@
+2020-07-13 00:14:40.900  WARN 2896 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m2s164ms978µs100ns).
+2020-07-13 00:35:41.962  WARN 2896 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m869ms251µs100ns).
+2020-07-13 00:51:48.453  WARN 2896 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m6s320ms257µs300ns).
+2020-07-13 13:38:37.301  INFO 8740 --- [restartedMain] com.alvis.exam.ExamApplication           : Starting ExamApplication on LAPTOP-DA32CNEO with PID 8740 (E:\uexam_project\uexam\source\exam\source\exam\target\classes started by 10983 in E:\uexam_project\uexam\source\exam\source\exam)
+2020-07-13 13:38:37.301  INFO 8740 --- [restartedMain] com.alvis.exam.ExamApplication           : The following profiles are active: dev
+2020-07-13 13:38:37.348  INFO 8740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-13 13:38:37.364  INFO 8740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-13 13:38:38.020  INFO 8740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-13 13:38:38.020  INFO 8740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-07-13 13:38:38.082  INFO 8740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2020-07-13 13:38:38.410  INFO 8740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'cacheConfig' of type [com.alvis.exam.configuration.spring.cache.CacheConfig$$EnhancerBySpringCGLIB$$96ecb362] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-13 13:38:38.410  INFO 8740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2ec8fea5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-13 13:38:38.692  WARN 8740 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-07-13 13:38:38.707  INFO 8740 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-13 13:38:38.707  INFO 8740 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1343 ms
+2020-07-13 13:38:39.731  INFO 8740 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f6ca171, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ddbbf39, org.springframework.security.web.header.HeaderWriterFilter@15bbf12e, org.springframework.web.filter.CorsFilter@3b2727ff, org.springframework.security.web.authentication.logout.LogoutFilter@35c34bc8, com.alvis.exam.configuration.spring.security.RestLoginAuthenticationFilter@2ee3a85f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5682251c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37cfb824, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6af09190, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@1c0ec882, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61f97f2e, org.springframework.security.web.session.SessionManagementFilter@6d0bb7f4, org.springframework.security.web.access.ExceptionTranslationFilter@40a5dce1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21c3f43]
+2020-07-13 13:38:40.121  INFO 8740 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-07-13 13:38:40.137  INFO 8740 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-07-13 13:38:42.413  WARN 8740 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2020-07-13 13:38:43.562  INFO 8740 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-13 13:38:43.562 ERROR 8740 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.alvis.exam.ExamApplication.main(ExamApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:86)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1104)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1085)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:866)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:341)
+	at org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration$EnableRedisKeyspaceNotificationsInitializer.afterPropertiesSet(RedisHttpSessionConfiguration.java:302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 21 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:235)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:204)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:113)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:113)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:74)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:209)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:199)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:874)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:417)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:346)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:80)
+	... 28 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:670)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	... 12 common frames omitted
+
+2020-07-13 13:45:40.275  INFO 15596 --- [restartedMain] com.alvis.exam.ExamApplication           : Starting ExamApplication on LAPTOP-DA32CNEO with PID 15596 (E:\uexam_project\uexam\source\exam\source\exam\target\classes started by 10983 in E:\uexam_project\uexam\source\exam\source\exam)
+2020-07-13 13:45:40.275  INFO 15596 --- [restartedMain] com.alvis.exam.ExamApplication           : The following profiles are active: dev
+2020-07-13 13:45:40.338  INFO 15596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-13 13:45:40.338  INFO 15596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-13 13:45:40.943  INFO 15596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-13 13:45:40.943  INFO 15596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-07-13 13:45:40.990  INFO 15596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2020-07-13 13:45:41.319  INFO 15596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'cacheConfig' of type [com.alvis.exam.configuration.spring.cache.CacheConfig$$EnhancerBySpringCGLIB$$211d2296] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-13 13:45:41.319  INFO 15596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8f96dd9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-13 13:45:41.547  WARN 15596 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-07-13 13:45:41.563  INFO 15596 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-13 13:45:41.563  INFO 15596 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1225 ms
+2020-07-13 13:45:42.569  INFO 15596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e46f076, org.springframework.security.web.context.SecurityContextPersistenceFilter@70c9d860, org.springframework.security.web.header.HeaderWriterFilter@72d7e04b, org.springframework.web.filter.CorsFilter@74052f58, org.springframework.security.web.authentication.logout.LogoutFilter@60a0b2b9, com.alvis.exam.configuration.spring.security.RestLoginAuthenticationFilter@461c2cef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@217df5e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47fcecbd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d46388b, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@48a5bf05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d0c040e, org.springframework.security.web.session.SessionManagementFilter@1dc7e1aa, org.springframework.security.web.access.ExceptionTranslationFilter@60ca5b1d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44290db8]
+2020-07-13 13:45:42.900  INFO 15596 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-07-13 13:45:42.900  INFO 15596 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-07-13 13:45:43.275  INFO 15596 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-13 13:45:43.889  INFO 15596 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-07-13 13:45:43.905  INFO 15596 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2020-07-13 13:45:43.920  INFO 15596 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-07-13 13:45:43.967  INFO 15596 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2020-07-13 13:45:43.967  INFO 15596 --- [restartedMain] com.alvis.exam.ExamApplication           : Started ExamApplication in 3.99 seconds (JVM running for 4.63)
+2020-07-13 13:47:04.472  INFO 15596 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-13 13:47:04.473  INFO 15596 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-13 13:47:04.481  INFO 15596 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-07-13 13:47:17.245  INFO 15596 --- [XNIO-1 task-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-13 13:47:17.355  INFO 15596 --- [XNIO-1 task-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-13 13:47:17.360 DEBUG 15596 --- [XNIO-1 task-4] r.c.a.e.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2020-07-13 13:47:17.377 DEBUG 15596 --- [XNIO-1 task-4] r.c.a.e.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2020-07-13 13:47:17.406 DEBUG 15596 --- [XNIO-1 task-4] r.c.a.e.r.UserMapper.getUserByUserName   : <==      Total: 1
+2020-07-13 13:47:17.656 DEBUG 15596 --- [XNIO-1 task-4] r.c.a.e.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2020-07-13 13:47:17.658 DEBUG 15596 --- [XNIO-1 task-4] r.c.a.e.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思考试系统(String), 2020-07-13 13:47:17.64(Timestamp)
+2020-07-13 13:47:17.664 DEBUG 15596 --- [XNIO-1 task-4] r.c.a.e.r.U.insertSelective              : <==    Updates: 1
+2020-07-13 13:47:17.768 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2020-07-13 13:47:17.768 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectAllCount               : ==> Parameters: 
+2020-07-13 13:47:17.773 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectAllCount               : <==      Total: 1
+2020-07-13 13:47:17.774 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2020-07-13 13:47:17.774 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2020-07-13 13:47:17.777 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2020-07-13 13:47:17.778 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2020-07-13 13:47:17.778 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectAllCount               : ==> Parameters: 
+2020-07-13 13:47:17.783 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectAllCount               : <==      Total: 1
+2020-07-13 13:47:17.784 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2020-07-13 13:47:17.784 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectAllCount               : ==> Parameters: 
+2020-07-13 13:47:17.788 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectAllCount               : <==      Total: 1
+2020-07-13 13:47:17.793 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2020-07-13 13:47:17.793 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.U.selectCountByDate            : ==> Parameters: 2020-07-01 00:00:00.0(Timestamp), 2020-07-31 23:59:59.0(Timestamp)
+2020-07-13 13:47:17.796 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.U.selectCountByDate            : <==      Total: 2
+2020-07-13 13:47:17.798 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2020-07-13 13:47:17.799 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectCountByDate            : ==> Parameters: 2020-07-01 00:00:00.0(Timestamp), 2020-07-31 23:59:59.0(Timestamp)
+2020-07-13 13:47:17.800 DEBUG 15596 --- [XNIO-1 task-5] r.c.a.e.r.E.selectCountByDate            : <==      Total: 0
+2020-07-13 14:06:18.008 DEBUG 15596 --- [XNIO-1 task-6] r.c.a.e.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject WHERE deleted=0 
+2020-07-13 14:06:18.008 DEBUG 15596 --- [XNIO-1 task-6] r.c.a.e.r.SubjectMapper.allSubject       : ==> Parameters: 
+2020-07-13 14:06:18.012 DEBUG 15596 --- [XNIO-1 task-6] r.c.a.e.r.SubjectMapper.allSubject       : <==      Total: 0
+2020-07-13 14:06:18.049 DEBUG 15596 --- [XNIO-1 task-7] r.c.a.e.r.ExamPaperMapper.page_COUNT     : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 
+2020-07-13 14:06:18.049 DEBUG 15596 --- [XNIO-1 task-7] r.c.a.e.r.ExamPaperMapper.page_COUNT     : ==> Parameters: 
+2020-07-13 14:06:18.051 DEBUG 15596 --- [XNIO-1 task-7] r.c.a.e.r.ExamPaperMapper.page_COUNT     : <==      Total: 1
+2020-07-13 14:06:21.894 DEBUG 15596 --- [XNIO-1 task-8] r.c.a.e.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2020-07-13 14:06:21.894 DEBUG 15596 --- [XNIO-1 task-8] r.c.a.e.r.UserMapper.userPage_COUNT      : ==> Parameters: 1(Integer)
+2020-07-13 14:06:21.895 DEBUG 15596 --- [XNIO-1 task-8] r.c.a.e.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2020-07-13 14:06:21.899 DEBUG 15596 --- [XNIO-1 task-8] r.c.a.e.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2020-07-13 14:06:21.900 DEBUG 15596 --- [XNIO-1 task-8] r.c.a.e.repository.UserMapper.userPage   : ==> Parameters: 1(Integer), 10(Integer)
+2020-07-13 14:06:22.018 DEBUG 15596 --- [XNIO-1 task-8] r.c.a.e.repository.UserMapper.userPage   : <==      Total: 1
+2020-07-13 14:06:38.150 DEBUG 15596 --- [XNIO-1 task-9] r.c.a.e.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject WHERE deleted=0 
+2020-07-13 14:06:38.151 DEBUG 15596 --- [XNIO-1 task-9] r.c.a.e.r.SubjectMapper.allSubject       : ==> Parameters: 
+2020-07-13 14:06:38.152 DEBUG 15596 --- [XNIO-1 task-9] r.c.a.e.r.SubjectMapper.allSubject       : <==      Total: 0
+2020-07-13 14:06:38.152 DEBUG 15596 --- [XNIO-1 task-10] r.c.a.e.r.ExamPaperMapper.page_COUNT     : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 
+2020-07-13 14:06:38.153 DEBUG 15596 --- [XNIO-1 task-10] r.c.a.e.r.ExamPaperMapper.page_COUNT     : ==> Parameters: 
+2020-07-13 14:06:38.154 DEBUG 15596 --- [XNIO-1 task-10] r.c.a.e.r.ExamPaperMapper.page_COUNT     : <==      Total: 1
+2020-07-13 14:14:47.462 DEBUG 15596 --- [XNIO-1 task-11] r.c.a.e.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject WHERE deleted=0 
+2020-07-13 14:14:47.463 DEBUG 15596 --- [XNIO-1 task-11] r.c.a.e.r.SubjectMapper.allSubject       : ==> Parameters: 
+2020-07-13 14:14:47.464 DEBUG 15596 --- [XNIO-1 task-11] r.c.a.e.r.SubjectMapper.allSubject       : <==      Total: 0
+2020-07-13 14:15:13.662 ERROR 15596 --- [XNIO-1 task-12] c.a.e.c.s.exception.ExceptionHandle      : Request method 'GET' not supported
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:200)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:419)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:365)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:65)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:401)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1232)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1015)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:85)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:364)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-13 14:15:49.688 DEBUG 15596 --- [XNIO-1 task-15] r.c.a.e.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject WHERE deleted=0 
+2020-07-13 14:15:49.689 DEBUG 15596 --- [XNIO-1 task-15] r.c.a.e.r.SubjectMapper.allSubject       : ==> Parameters: 
+2020-07-13 14:15:49.690 DEBUG 15596 --- [XNIO-1 task-15] r.c.a.e.r.SubjectMapper.allSubject       : <==      Total: 0
+2020-07-13 14:15:56.150 ERROR 15596 --- [XNIO-1 task-17] c.a.e.c.s.exception.ExceptionHandle      : Request method 'GET' not supported
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:200)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:419)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:365)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:65)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:401)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1232)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1015)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:85)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:364)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-13 14:17:04.813  INFO 11328 --- [restartedMain] com.alvis.exam.ExamApplication           : Starting ExamApplication on LAPTOP-DA32CNEO with PID 11328 (E:\uexam_project\uexam\source\exam\source\exam\target\classes started by 10983 in E:\uexam_project\uexam\source\exam\source\exam)
+2020-07-13 14:17:04.813  INFO 11328 --- [restartedMain] com.alvis.exam.ExamApplication           : The following profiles are active: dev
+2020-07-13 14:17:04.875  INFO 11328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-13 14:17:04.875  INFO 11328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-13 14:17:05.494  INFO 11328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-13 14:17:05.494  INFO 11328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-07-13 14:17:05.525  INFO 11328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2020-07-13 14:17:05.822  INFO 11328 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'cacheConfig' of type [com.alvis.exam.configuration.spring.cache.CacheConfig$$EnhancerBySpringCGLIB$$c41e2dc0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-13 14:17:05.838  INFO 11328 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5bfa7903] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-13 14:17:06.072  WARN 11328 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-07-13 14:17:06.088  INFO 11328 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-13 14:17:06.088  INFO 11328 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1213 ms
+2020-07-13 14:17:07.049  INFO 11328 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a69ea9f, org.springframework.security.web.context.SecurityContextPersistenceFilter@3814a1c4, org.springframework.security.web.header.HeaderWriterFilter@197e384e, org.springframework.web.filter.CorsFilter@4e8227d0, org.springframework.security.web.authentication.logout.LogoutFilter@5b04bc3c, com.alvis.exam.configuration.spring.security.RestLoginAuthenticationFilter@512b3009, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30db8188, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@152a7563, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69a46afa, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7b96c318, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b3051d6, org.springframework.security.web.session.SessionManagementFilter@57137c7d, org.springframework.security.web.access.ExceptionTranslationFilter@56c2827, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4905610a]
+2020-07-13 14:17:07.387  INFO 11328 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-07-13 14:17:07.387  INFO 11328 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-07-13 14:17:07.753  INFO 11328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-13 14:17:08.367  INFO 11328 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-07-13 14:17:08.398  INFO 11328 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2020-07-13 14:17:08.398  INFO 11328 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-07-13 14:17:08.429  INFO 11328 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2020-07-13 14:17:08.445  INFO 11328 --- [restartedMain] com.alvis.exam.ExamApplication           : Started ExamApplication in 3.929 seconds (JVM running for 4.513)
+2020-07-13 14:17:14.094  INFO 11328 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-13 14:17:14.094  INFO 11328 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-13 14:17:14.100  INFO 11328 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-13 14:17:14.562  INFO 11328 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-13 14:17:14.665  INFO 11328 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-13 14:17:14.670 DEBUG 11328 --- [XNIO-1 task-2] r.c.a.e.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject WHERE deleted=0 
+2020-07-13 14:17:14.688 DEBUG 11328 --- [XNIO-1 task-2] r.c.a.e.r.SubjectMapper.allSubject       : ==> Parameters: 
+2020-07-13 14:17:14.704 DEBUG 11328 --- [XNIO-1 task-2] r.c.a.e.r.SubjectMapper.allSubject       : <==      Total: 0
+2020-07-13 14:17:49.131 DEBUG 11328 --- [XNIO-1 task-4] r.c.a.e.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2020-07-13 14:17:49.132 DEBUG 11328 --- [XNIO-1 task-4] r.c.a.e.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2020-07-13 14:17:49.135 DEBUG 11328 --- [XNIO-1 task-4] r.c.a.e.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2020-07-13 14:18:01.656 DEBUG 11328 --- [XNIO-1 task-5] r.c.a.e.r.SubjectMapper.insertSelective  : ==>  Preparing: insert into t_subject ( name, level, level_name, deleted ) values ( ?, ?, ?, ? ) 
+2020-07-13 14:18:01.657 DEBUG 11328 --- [XNIO-1 task-5] r.c.a.e.r.SubjectMapper.insertSelective  : ==> Parameters: VIP(String), 1(Integer), 技术部(String), false(Boolean)
+2020-07-13 14:18:01.661 DEBUG 11328 --- [XNIO-1 task-5] r.c.a.e.r.SubjectMapper.insertSelective  : <==    Updates: 1
+2020-07-13 14:18:02.262 DEBUG 11328 --- [XNIO-1 task-6] r.c.a.e.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2020-07-13 14:18:02.262 DEBUG 11328 --- [XNIO-1 task-6] r.c.a.e.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2020-07-13 14:18:02.263 DEBUG 11328 --- [XNIO-1 task-6] r.c.a.e.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2020-07-13 14:18:02.267 DEBUG 11328 --- [XNIO-1 task-6] r.c.a.e.repository.SubjectMapper.page    : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2020-07-13 14:18:02.267 DEBUG 11328 --- [XNIO-1 task-6] r.c.a.e.repository.SubjectMapper.page    : ==> Parameters: 10(Integer)
+2020-07-13 14:18:02.270 DEBUG 11328 --- [XNIO-1 task-6] r.c.a.e.repository.SubjectMapper.page    : <==      Total: 1
+2020-07-13 14:18:17.568 DEBUG 11328 --- [XNIO-1 task-7] r.c.a.e.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject WHERE deleted=0 
+2020-07-13 14:18:17.568 DEBUG 11328 --- [XNIO-1 task-7] r.c.a.e.r.SubjectMapper.allSubject       : ==> Parameters: 
+2020-07-13 14:18:17.570 DEBUG 11328 --- [XNIO-1 task-7] r.c.a.e.r.SubjectMapper.allSubject       : <==      Total: 1
+2020-07-13 14:18:17.574 DEBUG 11328 --- [XNIO-1 task-8] r.c.a.e.r.ExamPaperMapper.page_COUNT     : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 
+2020-07-13 14:18:17.575 DEBUG 11328 --- [XNIO-1 task-8] r.c.a.e.r.ExamPaperMapper.page_COUNT     : ==> Parameters: 
+2020-07-13 14:18:17.576 DEBUG 11328 --- [XNIO-1 task-8] r.c.a.e.r.ExamPaperMapper.page_COUNT     : <==      Total: 1
+2020-07-13 14:32:24.146  WARN 11328 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m9s270ms624µs100ns).
+2020-07-13 17:44:43.664  WARN 11328 --- [redisMessageListenerContainer-5] s.s.d.r.RedisOperationsSessionRepository : Unable to publish SessionDestroyedEvent for session 4267fbc7-5794-47a9-89a1-bbe9a9236602
+2020-07-13 17:44:46.432  WARN 11328 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h11m52s268ms769µs300ns).
+2020-07-13 18:24:59.196  INFO 22340 --- [restartedMain] com.alvis.exam.ExamApplication           : Starting ExamApplication on LAPTOP-DA32CNEO with PID 22340 (E:\uexam_project\uexam\source\exam\source\exam\target\classes started by 10983 in E:\uexam_project\uexam\source\exam\source\exam)
+2020-07-13 18:24:59.196  INFO 22340 --- [restartedMain] com.alvis.exam.ExamApplication           : The following profiles are active: dev
+2020-07-13 18:24:59.259  INFO 22340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-13 18:24:59.259  INFO 22340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-13 18:24:59.892  INFO 22340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-13 18:24:59.908  INFO 22340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-07-13 18:24:59.939  INFO 22340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2020-07-13 18:25:00.246  INFO 22340 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'cacheConfig' of type [com.alvis.exam.configuration.spring.cache.CacheConfig$$EnhancerBySpringCGLIB$$f98c8021] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-13 18:25:00.262  INFO 22340 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9168cb64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-13 18:25:00.478  WARN 22340 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-07-13 18:25:00.494  INFO 22340 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-07-13 18:25:00.494  INFO 22340 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1235 ms
+2020-07-13 18:25:01.504  INFO 22340 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71a647ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@60a8f2cc, org.springframework.security.web.header.HeaderWriterFilter@5df5a11b, org.springframework.web.filter.CorsFilter@1506f4c4, org.springframework.security.web.authentication.logout.LogoutFilter@42f70777, com.alvis.exam.configuration.spring.security.RestLoginAuthenticationFilter@497d0ac2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2eff9942, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54e4691a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3694d68c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@650c3d28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7997c954, org.springframework.security.web.session.SessionManagementFilter@1e11d09d, org.springframework.security.web.access.ExceptionTranslationFilter@34c5a339, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76d8cfb5]
+2020-07-13 18:25:01.834  INFO 22340 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-07-13 18:25:01.834  INFO 22340 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-07-13 18:25:02.248  INFO 22340 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-13 18:25:02.877  INFO 22340 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-07-13 18:25:02.892  INFO 22340 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2020-07-13 18:25:02.908  INFO 22340 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-07-13 18:25:02.940  INFO 22340 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2020-07-13 18:25:02.955  INFO 22340 --- [restartedMain] com.alvis.exam.ExamApplication           : Started ExamApplication in 4.092 seconds (JVM running for 4.714)
+2020-07-13 18:25:26.888  INFO 22340 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-13 18:25:26.888  INFO 22340 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-13 18:25:26.908  INFO 22340 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-07-13 18:25:28.014  INFO 22340 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-13 18:25:28.248  INFO 22340 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-13 18:25:28.256 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2020-07-13 18:25:28.296 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectAllCount               : ==> Parameters: 
+2020-07-13 18:25:28.336 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectAllCount               : <==      Total: 1
+2020-07-13 18:25:28.344 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2020-07-13 18:25:28.344 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2020-07-13 18:25:28.347 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2020-07-13 18:25:28.347 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2020-07-13 18:25:28.347 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectAllCount               : ==> Parameters: 
+2020-07-13 18:25:28.347 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectAllCount               : <==      Total: 1
+2020-07-13 18:25:28.347 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2020-07-13 18:25:28.347 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectAllCount               : ==> Parameters: 
+2020-07-13 18:25:28.355 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectAllCount               : <==      Total: 1
+2020-07-13 18:25:28.363 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2020-07-13 18:25:28.368 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.U.selectCountByDate            : ==> Parameters: 2020-07-01 00:00:00.0(Timestamp), 2020-07-31 23:59:59.0(Timestamp)
+2020-07-13 18:25:28.375 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.U.selectCountByDate            : <==      Total: 2
+2020-07-13 18:25:28.375 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2020-07-13 18:25:28.375 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectCountByDate            : ==> Parameters: 2020-07-01 00:00:00.0(Timestamp), 2020-07-31 23:59:59.0(Timestamp)
+2020-07-13 18:25:28.383 DEBUG 22340 --- [XNIO-1 task-2] r.c.a.e.r.E.selectCountByDate            : <==      Total: 0
+2020-07-13 18:25:54.895 DEBUG 22340 --- [XNIO-1 task-3] r.c.a.e.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject WHERE deleted=0 
+2020-07-13 18:25:54.896 DEBUG 22340 --- [XNIO-1 task-3] r.c.a.e.r.SubjectMapper.allSubject       : ==> Parameters: 
+2020-07-13 18:25:54.896 DEBUG 22340 --- [XNIO-1 task-3] r.c.a.e.r.SubjectMapper.allSubject       : <==      Total: 1
+2020-07-13 18:25:55.037 DEBUG 22340 --- [XNIO-1 task-4] r.c.a.e.r.ExamPaperMapper.page_COUNT     : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 
+2020-07-13 18:25:55.037 DEBUG 22340 --- [XNIO-1 task-4] r.c.a.e.r.ExamPaperMapper.page_COUNT     : ==> Parameters: 
+2020-07-13 18:25:55.037 DEBUG 22340 --- [XNIO-1 task-4] r.c.a.e.r.ExamPaperMapper.page_COUNT     : <==      Total: 1
+2020-07-13 18:26:23.099 DEBUG 22340 --- [XNIO-1 task-5] r.c.a.e.r.SubjectMapper.allSubject       : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject WHERE deleted=0 
+2020-07-13 18:26:23.099 DEBUG 22340 --- [XNIO-1 task-5] r.c.a.e.r.SubjectMapper.allSubject       : ==> Parameters: 
+2020-07-13 18:26:23.099 DEBUG 22340 --- [XNIO-1 task-5] r.c.a.e.r.SubjectMapper.allSubject       : <==      Total: 1
+2020-07-13 20:23:23.031  WARN 22340 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h26m54s418ms866µs700ns).
+2020-07-13 20:30:26.243  WARN 22340 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m33s172ms629µs800ns).
+2020-07-13 21:44:15.007  WARN 22340 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m18s292ms835µs800ns).
